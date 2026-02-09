@@ -1,0 +1,43 @@
+{
+  "name": "navoiy-terra-github-deployer",
+  "version": "1.0.0",
+  "description": "Automated GitHub deployment for Navoiy-Terra Corpus with Terra Ecosystem integration",
+  "main": "navoiy-github-deployer.js",
+  "scripts": {
+    "deploy": "node navoiy-github-deployer.js",
+    "test": "echo \"No tests configured yet\" && exit 0"
+  },
+  "keywords": [
+    "navoiy",
+    "alisher-navoi",
+    "digital-humanities",
+    "corpus",
+    "fmp",
+    "fractal-metascience",
+    "github-automation",
+    "terra-ecosystem",
+    "uzbek-literature"
+  ],
+  "author": {
+    "name": "Abdurashid Abdukarimov",
+    "email": "a.abdukarimov@fractal-metascience.org",
+    "url": "https://orcid.org/0009-0000-6394-4912"
+  },
+  "license": "CC-BY-4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Secret-Uzbek/Navoiy-Terra-Corpus"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.0.2",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/Secret-Uzbek"
+  }
+}
