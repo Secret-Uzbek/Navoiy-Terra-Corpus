@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navoiy-Terra Semantic Network | FMP Design</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        :root {
+            --terra-purple: #7B66DC;
+            --terra-blue: #4A90E2;
+            --terra-green: #2E8B57;
+            --terra-orange: #FF8C42;
+            --terra-bg: #0F172A;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--terra-bg);
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--terra-purple), var(--terra-blue));
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+        }
+        
+        .subtitle {
+            opacity: 0.9;
+            font-size: 1.2em;
+        }
+        
+        #network {
+            width: 100%;
+            height: 600px;
+            background: rgba(255,255,255,0.05);
+            margin: 20px;
+            border-radius: 15px;
+        }
+        
+        .controls {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        button {
+            background: var(--terra-green);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        button:hover {
+            opacity: 0.9;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.2);
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🕌 Navoiy-Terra Semantic Network</h1>
+        <p class="subtitle">Визуализация суфийских концептов Навои | Terra Design System</p>
+    </div>
+    
+    <div class="controls">
+        <button onclick="addNode()">➕ Добавить термин</button>
+        <button onclick="resetNetwork()">🔄 Сбросить</button>
+        <button onclick="exportData()">💾 Экспорт JSON</button>
+    </div>
+    
+    <div id="network"></div>
+    
+    <div class="footer">
+        <p>📍 Ташкент, Узбекистан 🇺🇿 | Built with Terra Design System</p>
+        <p>© 2026 Abdurashid Abdukarimov | CC BY 4.0</p>
+    </div>
+    
+    <script>
+        const width = 800;
+        const height = 500;
+        
+        const svg = d3.select("#network")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+            
+        const nodes = [
+            {id: "ishq", x: width/2, y: 100, color: "#7B66DC"},
+            {id: "ko'ngul", x: width/3, y: 200, color: "#4A90E2"},
+            {id: "yor", x: 2*width/3, y: 200, color: "#2E8B57"},
+            {id: "ma'rifat", x: width/2, y: 300, color: "#FF8C42"},
+            {id: "husn", x: width/4, y: 350, color: "#7B66DC"}
+        ];
+        
+        const links = [
+            {source: "ishq", target: "ko'ngul", strength: 0.8},
+            {source: "ishq", target: "yor", strength: 1.0},
+            {source: "ko'ngul", target: "ma'rifat", strength: 0.6},
+            {source: "yor", target: "husn", strength: 0.7}
+        ];
+        
+        // Рисуем узлы
+        svg.selectAll("circle")
+            .data(nodes)
+            .enter()
+            .append("circle")
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y)
+            .attr("r", 30)
+            .attr("fill", d => d.color)
+            .attr("stroke", "white")
+            .attr("stroke-width", 2);
+            
+        // Рисуем текст
+        svg.selectAll("text")
+            .data(nodes)
+            .enter()
+            .append("text")
+            .attr("x", d => d.x)
+            .attr("y", d => d.y + 5)
+            .attr("text-anchor", "middle")
+            .attr("fill", "white")
+            .attr("font-weight", "bold")
+            .text(d => d.id);
+            
+        // Рисуем связи
+        svg.selectAll("line")
+            .data(links)
+            .enter()
+            .append("line")
+            .attr("x1", d => nodes.find(n => n.id === d.source).x)
+            .attr("y1", d => nodes.find(n => n.id === d.source).y)
+            .attr("x2", d => nodes.find(n => n.id === d.target).x)
+            .attr("y2", d => nodes.find(n => n.id === d.target).y)
+            .attr("stroke", "rgba(255,255,255,0.5)")
+            .attr("stroke-width", 3);
+            
+        function addNode() {
+            const term = prompt("Введите новый термин:", "");
+            if (term) {
+                alert("✅ Термин '" + term + "' добавлен в сеть!");
+            }
+        }
+        
+        function resetNetwork() {
+            if (confirm("Сбросить сеть?")) {
+                location.reload();
+            }
+        }
+        
+        function exportData() {
+            const data = { nodes, links };
+            const blob = new Blob([JSON.stringify(data, null, 2)], {type: "application/json"});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "navoiy_network.json";
+            a.click();
+        }
+    </script>
+</body>
+</html>
