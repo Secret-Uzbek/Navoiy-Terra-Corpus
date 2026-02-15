@@ -38,12 +38,12 @@ npm install
 ### 3. Экспорт токена
 
 ```bash
-export GITHUB_TOKEN="your_token_here"
+export GITHUB_TOKEN="REDACTED_BY_FMP_GUARD"
 ```
 
 **Windows (PowerShell):**
 ```powershell
-$env:GITHUB_TOKEN="your_token_here"
+$env:GITHUB_TOKEN="REDACTED_BY_FMP_GUARD"
 ```
 
 **Windows (CMD):**
@@ -190,7 +190,7 @@ const CONFIG = {
 ### Ошибка "GITHUB_TOKEN не найден"
 
 ```bash
-export GITHUB_TOKEN="your_token_here"
+export GITHUB_TOKEN="REDACTED_BY_FMP_GUARD"
 ```
 
 ### Ошибка "Repository already exists"
@@ -290,6 +290,6 @@ V Международный симпозиум "Навои и Восточны�
 
 ---
 
-**From prison · Zero budget · Maximum impact · Fractal Metascience Paradigm**
+**From isolation · Zero budget · Maximum impact · Fractal Metascience Paradigm**
 
 © 2026 Abdurashid Abdukarimov | CC BY 4.0
