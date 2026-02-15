@@ -19,7 +19,7 @@
  * ИСПОЛЬЗОВАНИЕ:
  * 1. Установите зависимости: npm install octokit node-fetch
  * 2. Создайте GitHub Personal Access Token с правами repo
- * 3. Экспортируйте токен: export GITHUB_TOKEN="your_token_here"
+ * 3. Экспортируйте токен: export GITHUB_TOKEN="REDACTED_BY_FMP_GUARD"
  * 4. Запустите: node navoiy-github-deployer.js
  */
 
@@ -866,7 +866,7 @@ async function main() {
   const token = process.env.GITHUB_TOKEN;
   if (!token) {
     console.error('❌ Ошибка: GITHUB_TOKEN не найден');
-    console.error('Экспортируйте токен: export GITHUB_TOKEN="your_token_here"');
+    console.error('Экспортируйте токен: export GITHUB_TOKEN="REDACTED_BY_FMP_GUARD"');
     process.exit(1);
   }
   
