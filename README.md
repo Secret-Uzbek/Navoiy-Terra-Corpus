@@ -11,8 +11,8 @@
 This repository includes the "Ancestry Data" layer—foundational works of the scholars who shaped the intellectual environment of Alisher Navoi.
 
 ### Core Additions:
-* **Global Recognition**: S. Frederick Starr’s *Lost Enlightenment*.
-* **Renaissance Foundations**: M. Khayrullaev’s research on IX–XII century surge.
+* **Global Recognition**: S. Frederick Starr's *Lost Enlightenment*.
+* **Renaissance Foundations**: M. Khayrullaev's research on IX–XII century surge.
 * **Biographical Data**: Collections of Central Asian scholars (1928, 1943, 1961).
 
 ## 🏛️ REPOSITORY STRUCTURE
