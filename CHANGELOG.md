@@ -1,21 +1,21 @@
-# CHANGELOG — NAVOIY-TERRA CORPUS
+# CHANGELOG вЂ” NAVOIY-TERRA CORPUS
 
 ## [v1.1] - 2026-02-17
 
 ### Added
-- Lisonut-tayr (nazm) — 500 lines of poetic text with Seven Valleys journey
-- Lisonut-tayr (nasr) — Prose philosophical commentary on Unity of Being
-- Majolisun-nafois — Excerpts from biographical dictionary of 459 poets
+- Lisonut-tayr (nazm) вЂ” 500 lines of poetic text with Seven Valleys journey
+- Lisonut-tayr (nasr) вЂ” Prose philosophical commentary on Unity of Being
+- Majolisun-nafois вЂ” Excerpts from biographical dictionary of 459 poets
 - 10 new terms in semantic lexicon (simurgh, hudhud, vodiy, talab, ma'rifat, fano, she'r, tab', vujud, tajalli)
-- semantic_lexicon_v1.2_expanded.json — 15 total terms with 9-language coverage
-- docs/LISONUT_TAYR_ANALYSIS.md — Comprehensive guide to Seven Valleys
-- analysis/simurgh_network.html — Interactive visualization of bird metaphor network
+- semantic_lexicon_v1.2_expanded.json вЂ” 15 total terms with 9-language coverage
+- docs/LISONUT_TAYR_ANALYSIS.md вЂ” Comprehensive guide to Seven Valleys
+- analysis/simurgh_network.html вЂ” Interactive visualization of bird metaphor network
 
 ### Changed
-- Corpus size: 26 → 29 texts
-- Poetry lines: 2,847 → 3,247
-- Prose words: 0 → 8,934 (NEW genre)
-- Translation units: 103 → 309 (+200%)
+- Corpus size: 26 в†’ 29 texts
+- Poetry lines: 2,847 в†’ 3,247
+- Prose words: 0 в†’ 8,934 (NEW genre)
+- Translation units: 103 в†’ 309 (+200%)
 
 ### Why v1.1 Matters
 Lisonut-tayr is Navoiy's spiritual magnum opus. This edition provides:
@@ -39,4 +39,4 @@ Lisonut-tayr is Navoiy's spiritual magnum opus. This edition provides:
 
 ---
 
-© 2026 Abdurashid Abdukarimov | CC BY 4.0
+В© 2026 Abdurashid Abdukarimov | CC BY 4.0
