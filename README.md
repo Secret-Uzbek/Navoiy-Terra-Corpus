@@ -14,9 +14,10 @@
 - Location: Tashkent, Uzbekistan
 - Foundation: Fractal Metascience Foundation
 
-## ð Links
-- [FMP Central Hub](https://github.com/Secret-Uzbek/FMP-CENTRAL-REPO)
-- [Full Ecosystem Map](https://Secret-Uzbek.github.io/FMP-CENTRAL-REPO/repository.html)
+### Core Additions:
+* **Global Recognition**: S. Frederick Starr's *Lost Enlightenment*.
+* **Renaissance Foundations**: M. Khayrullaev's research on IX–XII century surge.
+* **Biographical Data**: Collections of Central Asian scholars (1928, 1943, 1961).
 
 
 ---
