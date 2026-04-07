@@ -26,7 +26,7 @@
 **Publication Date:** 2026-02-09  
 
 ### Step 4: Connect to GitHub (Optional)
-1. In Zenodo Settings → GitHub
+1. In Zenodo Settings в†’ GitHub
 2. Enable "Navoiy-Terra-Corpus" repository
 3. Every new GitHub release will auto-archive to Zenodo
 
