@@ -1,14 +1,7 @@
 cff-version: 1.2.0
-message: "Cite as follows:"
+message: "If you use this work, cite it as below."
 authors:
-  - family-names: "Abdukarimov"
-    given-names: "Abdurashid A."
+  - family-names: Abdukarimov
+    given-names: Abdurashid
     orcid: "https://orcid.org/0009-0000-6394-4912"
-title: "Navoiy-Terra: Knowledge Core of Central Asian Heritage"
-version: 1.4.0
-date-released: 2026-04-06
-url: "https://github.com/secret-uzbek/navoiy-terra-corpus"
-keywords:
-  - Alisher Navoi
-  - Women Made Central Asia
-  - Semantic Corpus
+title: "navoiy-terra-corpus"
