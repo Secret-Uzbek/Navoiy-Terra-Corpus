@@ -1,7 +1,19 @@
 cff-version: 1.2.0
-message: "If you use this work, cite it as below."
+message: "If you use or quote this human-facing literary corpus branch, please cite it as below."
+type: dataset
+title: "navoiy-terra-corpus"
 authors:
   - family-names: Abdukarimov
     given-names: Abdurashid
     orcid: "https://orcid.org/0009-0000-6394-4912"
-title: "navoiy-terra-corpus"
+    affiliation: "Fractal Metascience Foundation, Tashkent"
+repository-code: "https://github.com/Secret-Uzbek/navoiy-terra-corpus"
+abstract: "Human-facing literary and semantic corpus branch focused on Alisher Navoiy, Lison ut-Tayr, semantic networks, and civilizational continuity within the Terra ecosystem."
+keywords:
+  - alisher-navoiy
+  - central-asia
+  - corpus
+  - fractal-metascience
+  - literature
+license: CC0-1.0
+version: "1.0.0"
