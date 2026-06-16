@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Simurgh Network вЂ” NAVOIY-TERRA v1.1</title>
+<title>Simurgh Network — NAVOIY-TERRA v1.1</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <style>
 body{margin:0;background:linear-gradient(135deg,#667eea,#764ba2);font-family:sans-serif;overflow:hidden}
@@ -33,8 +33,8 @@ const W=window.innerWidth,H=window.innerHeight;
 const svg=d3.select("#svg").attr("width",W).attr("height",H);
 const tip=d3.select("#tip");
 const nodes=[
-{id:"simurgh",l:"Simurgh",t:"divine",r:30,d:"Divine Unity вЂ” Si Murgh (30 birds)"},
-{id:"hudhud",l:"Hudhud",t:"guide",r:20,d:"Hoopoe вЂ” Spiritual guide (Pir)"},
+{id:"simurgh",l:"Simurgh",t:"divine",r:30,d:"Divine Unity — Si Murgh (30 birds)"},
+{id:"hudhud",l:"Hudhud",t:"guide",r:20,d:"Hoopoe — Spiritual guide (Pir)"},
 {id:"talab",l:"Talab",t:"valley",r:18,d:"Valley 1: Quest"},
 {id:"ishq",l:"Ishq",t:"valley",r:18,d:"Valley 2: Divine Love"},
 {id:"marifat",l:"Ma'rifat",t:"valley",r:18,d:"Valley 3: Gnosis"},
@@ -42,11 +42,11 @@ const nodes=[
 {id:"tawhid",l:"Tawhid",t:"valley",r:18,d:"Valley 5: Unity"},
 {id:"hayrat",l:"Hayrat",t:"valley",r:18,d:"Valley 6: Bewilderment"},
 {id:"fano",l:"Fano",t:"valley",r:18,d:"Valley 7: Annihilation"},
-{id:"bulbul",l:"Bulbul",t:"seeker",r:14,d:"Nightingale вЂ” Passionate lover"},
-{id:"vujud",l:"Vujud",t:"concept",r:14,d:"Being вЂ” Wahdat al-Wujud"},
-{id:"tajalli",l:"Tajalli",t:"concept",r:14,d:"Manifestation вЂ” Divine self-disclosure"},
-{id:"yor",l:"Yor",t:"concept",r:14,d:"Beloved вЂ” Divine object of love"},
-{id:"kongul",l:"Ko'ngul",t:"concept",r:14,d:"Heart вЂ” Locus of encounter"}
+{id:"bulbul",l:"Bulbul",t:"seeker",r:14,d:"Nightingale — Passionate lover"},
+{id:"vujud",l:"Vujud",t:"concept",r:14,d:"Being — Wahdat al-Wujud"},
+{id:"tajalli",l:"Tajalli",t:"concept",r:14,d:"Manifestation — Divine self-disclosure"},
+{id:"yor",l:"Yor",t:"concept",r:14,d:"Beloved — Divine object of love"},
+{id:"kongul",l:"Ko'ngul",t:"concept",r:14,d:"Heart — Locus of encounter"}
 ];
 const links=[
 {s:"hudhud",t:"bulbul"},{s:"bulbul",t:"talab"},
