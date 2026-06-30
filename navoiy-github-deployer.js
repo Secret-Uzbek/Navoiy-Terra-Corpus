@@ -589,7 +589,7 @@ class TerraWebPageGenerator {
         </div>
         <p style="font-size: 14px; opacity: 0.8;">
             © 2026 Abdurashid Abdukarimov | CC BY 4.0 License<br>
-            Built with ❤️ in Zarafshan, Uzbekistan 🇺🇿
+            Built with ❤️ in Tashkent, Uzbekistan 🇺🇿
         </p>
     </footer>
 </body>
